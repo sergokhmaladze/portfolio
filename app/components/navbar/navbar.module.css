@@ -1,0 +1,28 @@
+.navbarContainer{
+   display: none;
+}
+
+.navbarList{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbarItems{
+  text-decoration: none;
+  margin: 0 15px;
+  pointer-events: auto;
+  color: black;
+}
+
+.navbarItems:hover{
+  color: blue;
+}
+
+@media (min-width: 769px){
+  .navbarContainer{
+    display: block;
+  }
+}

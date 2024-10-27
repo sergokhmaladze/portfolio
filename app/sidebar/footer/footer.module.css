@@ -1,0 +1,17 @@
+.container{
+    width: 100%;
+    margin-top: 100px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.socialsHeader{
+    margin-bottom: 20px;
+   
+}
+
+.socialCont{
+    margin: 0 0 20px 5px;
+    padding: 30px 0 30px 0;
+    
+}

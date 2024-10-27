@@ -1,0 +1,164 @@
+ .sidebar {
+    background-color: white;
+    pointer-events: none;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 70px;
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    
+  }
+  
+  .menuIcon {
+    cursor: pointer;
+    font-size: 24px;
+    justify-content: flex-end;
+    z-index: 10;
+    display: none;
+  }
+  
+  .navMenu {  
+    padding: 0;
+    border-top: 1px solid #eee;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    
+    
+  }
+
+  .showMenu {
+    background-color: white;
+    width: 100%;
+    
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease;
+    margin-top: 230px;
+    
+    
+  }
+
+  
+  .home, .contact, .about{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #eee;
+    line-height: 3.5;
+    font-family: sans-serif;
+    pointer-events: auto;
+    
+  }
+  
+  
+  .closeIcon, .hamburgerIcon {
+    font-size: 24px;
+    pointer-events: auto;
+    margin-right: 20px;
+    
+  }
+  
+
+  .logo{
+    position: fixed;
+    align-items: right;
+    flex-shrink: 0;
+    z-index: 10;
+    
+  }
+
+  .logoImage{
+    pointer-events: auto;
+    color: red;
+    border-radius: 20px;
+    margin-right: 280px;
+  }
+
+  .myName{
+    z-index: 10;
+    position: fixed;
+    margin-right: 150px;
+    text-decoration: none;
+    pointer-events: auto;
+    color: black;
+  }
+
+  @media (max-width: 768px){
+    .menuIcon{
+      display: block;
+    }
+  }
+
+  @media (min-width: 380px) and (max-width: 480px) {
+    .logo{
+      margin-right: 10vw;
+    }
+    
+    .myName{
+      margin-right: 12rem;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px){
+    .logo{
+      margin-right: 30vw;
+    }
+
+    .myName{
+      margin-right: 18rem;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px){
+    .logo{
+      margin-right: 55vw;
+    }
+
+    .myName{
+      margin-right: 65vw;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1368px){
+    .logo{
+      margin-right: 65vw;
+    }
+
+    .myName{
+      margin-right: 75vw;
+    }
+  }
+
+  @media (min-width: 1369px) and (max-width: 1600px) {
+    .logo{
+      margin-right: 75vw;
+    }
+
+    .myName{
+      margin-right: 84vw;
+    }
+  }
+
+  @media (min-width: 1601px){
+    .logo{
+      margin-right: 75vw;
+    }
+
+    .myName{
+      margin-right: 81vw;
+    }
+  }
+
+ 
+
